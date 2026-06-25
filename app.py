@@ -14,7 +14,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 LLM_PROVIDER = "gemini"
 LLM_MODEL = "gemini-2.5-flash"
-
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 CORPUS_PATH = "./zyro-dynamics-hr-corpus"
 
 # =========================
